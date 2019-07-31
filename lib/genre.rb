@@ -13,6 +13,10 @@ class Genre
       song.genre == self
     end
   end
+  
+  def self.all
+    @@all = [] 
+  end
 
   def artists
     Song.all.map do |song|
